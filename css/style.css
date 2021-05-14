@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+:root {
+	--text-colour: #00aa00;
+}
+
+body {
+	background-color: black;
+	font-family: 'Roboto Mono', sans-serif;
+	line-height: 1.5;
+	font-size: 1rem;
+}
+
+.container {
+	max-width: 600px;
+	margin: auto;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	color: var(--text-colour);
+	font-size: 50px;
+	letter-spacing: -5px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	border-right: .15em solid orange;
+	white-space: nowrap;
+	margin: 3rem;
+	letter-spacing: .15em;
+	animation:
+		typing 3s steps(50, end),
+		blink-caret 1s step-end infinite;
+
+}
+
+@keyframes typing {
+	from {
+		width: 0
+	}
+
+	to {
+		width: 100%
+	}
+}
+
+@keyframes blink-caret {
+
+	from,
+	to {
+		border-color: transparent
+	}
+
+	50% {
+		border-color: orange;
+	}
+}
+
+h2 {
+	color: var(--text-colour);
+}
+
+h3 {
+	color: orange;
+	margin-bottom: 3rem;
+	padding: 0 0 0 3rem;
+}
+
+ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+ul > li {
+	padding: 1rem;
+}
+
+a {
+	color: var(--text-colour);
+	text-decoration: none;
+}
+
+p {
+	margin: 20px 0;
+	color: orange;
+}
+
+#contact > ul {
+	color: orange;
+}
+
+nav {
+	width: 50%;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav ul li {
+	color: var(--text-colour);
+	cursor: pointer;
+}
+
+.wb-body {
+	background: #111;
+	padding: 20px;
+}
+
+.hidden {
+	display: none;
+}
